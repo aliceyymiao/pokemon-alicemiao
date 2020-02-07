@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Midterm</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <style>
+      body { font: 12px Arial;}
+
+      path {
+          stroke-width: 2;
+          fill: none;
+      }
+      .axis path,
+      .axis line {
+          fill: none;
+          stroke: grey;
+          stroke-width: 1;
+          shape-rendering: crispEdges;
+      }
+
+      div.tooltip {
+          position: absolute;
+          text-align: center;
+          width: 120px;
+          height: 42px;
+          padding: 2px;
+          font: 12px sans-serif;
+          background: lightsteelblue;
+          border: 0px;
+          border-radius: 8px;
+          pointer-events: none;
+      }
+
+      div.title, div.title2 {
+        font: 15px sans-serif;
+        margin-left: 30px;
+        margin-bottom: 40px;
+      }
+
+
+    </style>
+    <h1>Pokemon: Special Defense vs Total Stats</h1>
+    <div class="title">Lengendary
+      <div class="content">
+
+      </div>
+    </div>
+    <div class="title2">Generation (group)
+      <div class="content2">
+
+      </div>
+    </div>
+  </body>
+  
+</html>
