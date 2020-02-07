@@ -1,2 +1,0 @@
-# pokemon-alicemiao
-pokemon visualization
