@@ -4,8 +4,8 @@
 
   let data = "no data";
   let svgContainer = ""; // keep SVG reference in global scope
-  let type1 = ["Bug", "Dark", "Electric", "Fairy", "Fighting", "Fire", "Ghost", "Grass", "Ground", "Ice",
-              "Normal", "Poison", "Psychic", "Steel", "Water"];
+  let type1 = ["Bug", "Dark", "Dragon", "Electric", "Fairy", "Fighting", "Fire", "Flying", "Ghost", "Grass", "Ground", "Ice",
+              "Normal", "Poison", "Psychic", "Rock", "Steel", "Water"];
 
   let colors = {
 
@@ -13,13 +13,17 @@
 
     "Dark": "#A0CBE8",
 
-    "Electric": "#F28E2B",
+    "Dragon": "#FF8C00",
 
-    "Fairy": "#FFBE7D",
+    "Electric": "orange",
+
+    "Fairy": "plum",
 
     "Fighting": "#59A14F",
 
     "Fire": "#8CD17D",
+
+    "Flying": "moccasin",
 
     "Ghost": "#B6992D",
 
@@ -35,6 +39,8 @@
 
     "Psychic": "#79706E",
 
+    "Rock": "salmon",
+
     "Steel": "#BAB0AC",
 
     "Water": "#D37295"
@@ -46,7 +52,7 @@
     svgContainer = d3.select('body')
       .append('svg')
       .attr('width', 1000)
-      .attr('height', 500);
+      .attr('height', 600);
     // d3.csv is basically fetch but it can be be passed a csv file as a parameter
     d3.csv("pokemon.csv")
       .then((data) => makeScatterPlot(data));
@@ -123,7 +129,7 @@
     svgContainer = d3.select('body')
     .append('svg')
     .attr('width', 1000)
-    .attr('height', 500);
+    .attr('height', 600);
     // get arrays of fertility rate data and life Expectancy data
     let special_defense_data = data.map((row) => parseFloat(row["Sp. Def"]));
     let total_data = data.map((row) => parseFloat(row["Total"]));
